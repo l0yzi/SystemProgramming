@@ -1,3 +1,5 @@
+#ifndef RACINGCAR_H
+#define RACINGCAR_H
 #pragma once
 #include <iostream>
 #include "Car.h"
@@ -22,3 +24,4 @@ class RacingCar : public Car {
 	private:
 		bool _hasCarburetor;
 };
+#endif
