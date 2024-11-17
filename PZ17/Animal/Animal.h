@@ -1,6 +1,7 @@
+#ifndef ANIMAL_H
+#define ANIMAL_H
 #include <iostream>
 using namespace std;
-#define ANIMAL_H
 namespace check {
 	int CheckNum(int num);
 	double CheckNum(double num);
@@ -52,3 +53,4 @@ public:
 	double increaseWeight(int feedingDays);
 	void printInfo();
 };
+#endif
