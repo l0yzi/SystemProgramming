@@ -1,3 +1,5 @@
+#ifndef TRUCK_H
+#define TRUCK_H
 #pragma once
 #include <iostream>
 #include "Car.h"
@@ -23,3 +25,4 @@ class Truck : public Car {
 	private:
 		bool _hasTrailer;
 };
+#endif
