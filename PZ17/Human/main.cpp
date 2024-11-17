@@ -16,7 +16,7 @@ int main() {
 	Child child("Wolf", "Putilov", 14, 50, 1.6, "Kennels");
 	child.displayChild();
 
-	Adult* adult = new Adult("Vladlen", "Tatarskiy", 40, 80, 1.85, "Voenñor");
+	Adult* adult = new Adult("Vladlen", "Tatarskiy", 40, 80, 1.85, "Voencor");
 	adult->displayAdult();
 	delete adult;
 
