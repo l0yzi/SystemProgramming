@@ -7,14 +7,6 @@ namespace check {
 	string CheckAlpha(string str);
 }
 
-namespace ageCategory {
-	enum age {
-		Young = 2,
-		Adult = 6,
-		Senior = 12,
-	};
-}
-
 class Animal {
 private:
 	string _name;
