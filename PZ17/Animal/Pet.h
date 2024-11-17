@@ -1,4 +1,6 @@
 #pragma once
+#ifndef PET_H
+#define PET_H
 #include <iostream>
 #include "Animal.h"
 
@@ -23,3 +25,4 @@ public:
 private:
 	string _owner;
 };
+#endif
