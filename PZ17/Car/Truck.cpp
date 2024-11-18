@@ -42,5 +42,5 @@ void Truck::displayTruck() {
 	<< "; Тип кузова: " << this->getBodyType()
 	<< "; Объём двигателя: " << this->getEngineVolume()
 	<< "; Пробег: " << this->getMileage()
-	<< "; Есть прицеп: " << boolalpha << this->_hasCarburetor << endl;	
+	<< "; Есть прицеп: " << boolalpha << this->_hasTrailer << endl;	
 }
