@@ -1,4 +1,6 @@
 #pragma once
+#ifndef WILD_H
+#define WILD_H
 #include <iostream>
 #include "Animal.h"
 
@@ -22,3 +24,4 @@ public:
 private:
 	string _habitat;
 };
+#endif

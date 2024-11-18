@@ -1,18 +1,18 @@
 #define CURRENT_YEAR 2024
 #include <iostream>
-#include "Animal.h"
+#include "Human.h"
 using namespace std;
 
 int check::CheckNum(int num) {
 	if (num < 0) {
-		cout << "Îøèáêà. Ââåäèòå êîððåêòíûå äàííûå!" << endl;
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ . Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã°Ã°Ã¥ÃªÃ²Ã­Ã»Ã¥ Ã¤Ã Ã­Ã­Ã»Ã¥!" << endl;
 		return 0;
 	}
 	return num;
 }
 double check::CheckNum(double num) {
 	if (num < 0) {
-		cout << "Îøèáêà. Ââåäèòå êîððåêòíûå äàííûå!" << endl;
+		cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ . Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã°Ã°Ã¥ÃªÃ²Ã­Ã»Ã¥ Ã¤Ã Ã­Ã­Ã»Ã¥!" << endl;
 		return 0;
 	}
 	return num;
@@ -20,7 +20,7 @@ double check::CheckNum(double num) {
 string check::CheckAlpha(string str) {
 	for (int i = 0; i < str.length(); ++i) {
 		if (!isalpha(str.at(i)) && !ispunct(str.at(i))) {
-			cout << "Îøèáêà. Ââåäèòå êîððåêòíûå äàííûå!" << endl;
+			cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ . Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã°Ã°Ã¥ÃªÃ²Ã­Ã»Ã¥ Ã¤Ã Ã­Ã­Ã»Ã¥!" << endl;
 			return "-";
 		}
 	}
@@ -48,7 +48,7 @@ Human Human::operator++() {
 }
 Human Human::operator--() {
 	if (this->_height - 0.1 < 0) {
-		cout << "Íåëüçÿ óìåíüøèòü ðîñò ÷åëîâåêà. Ðîñò ìåíüøå 0,1 -(" << this->_height << ")" << endl;
+		cout << "ÃÃ¥Ã«Ã¼Ã§Ã¿ Ã³Ã¬Ã¥Ã­Ã¼Ã¸Ã¨Ã²Ã¼ Ã°Ã®Ã±Ã² Ã·Ã¥Ã«Ã®Ã¢Ã¥ÃªÃ . ÃÃ®Ã±Ã² Ã¬Ã¥Ã­Ã¼Ã¸Ã¥ 0,1 -(" << this->_height << ")" << endl;
 	}
 	else {
 		this->_height -= 0.1;
@@ -64,10 +64,10 @@ bool Human::operator<(Human other) {
 }
 
 ostream& operator<<(ostream& output, Human instance) {
-	output << "Èìÿ + Ôàìèëèÿ: " << instance._firstName << " " << instance._lastName
-		<< "; Âîçðàñò: " << instance._age
-		<< "; Âåñ: " << instance._weight
-		<< "; Ðîñò: " << instance._height << endl;
+	output << "ÃˆÃ¬Ã¿ + Ã”Ã Ã¬Ã¨Ã«Ã¨Ã¿: " << instance._firstName << " " << instance._lastName
+		<< "; Ã‚Ã®Ã§Ã°Ã Ã±Ã²: " << instance._age
+		<< "; Ã‚Ã¥Ã±: " << instance._weight
+		<< "; ÃÃ®Ã±Ã²: " << instance._height << endl;
 	return output;
 }
 

@@ -1,18 +1,11 @@
+#ifndef ANIMAL_H
+#define ANIMAL_H
 #include <iostream>
 using namespace std;
-#define ANIMAL_H
 namespace check {
 	int CheckNum(int num);
 	double CheckNum(double num);
 	string CheckAlpha(string str);
-}
-
-namespace ageCategory {
-	enum age {
-		Young = 2,
-		Adult = 6,
-		Senior = 12,
-	};
 }
 
 class Animal {
@@ -60,3 +53,4 @@ public:
 	double increaseWeight(int feedingDays);
 	void printInfo();
 };
+#endif
