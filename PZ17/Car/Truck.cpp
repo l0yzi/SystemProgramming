@@ -37,10 +37,10 @@ bool Truck::getHasTrailer() {
 }
 
 void Truck::displayTruck() {
-	cout << "Truck: " << this->getBrand()
-		<< " | Color: " << this->getColor()
-		<< " | BodyType: " << this->getBodyType()
-		<< " | MotorCapacity: " << this->getEngineVolume()
-		<< " | Mileage: " << this->getMileage()
-		<< " | HasTrailer: " << boolalpha << this->_hasTrailer << endl;
+	cout << "Гоночный автомобиль: " << this->getBrand()
+	<< "; Цвет: " << this->getColor()
+	<< "; Тип кузова: " << this->getBodyType()
+	<< "; Объём двигателя: " << this->getEngineVolume()
+	<< "; Пробег: " << this->getMileage()
+	<< "; Есть прицеп: " << boolalpha << this->_hasCarburetor << endl;	
 }
